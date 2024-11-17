@@ -1,6 +1,7 @@
 
 
-// https://gist.githubusercontent.com/timo22345/9413158/raw/2205896461da9cf7ad1700b0db8257ff9a52d7fa/flatten.js
+// https://gist.github.com/timo22345/9413158/    
+// hacked to work with Deno
 
 /*
 Random path and shape generator, flattener test base: https://jsfiddle.net/fjm9423q/embedded/result/
