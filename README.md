@@ -1,14 +1,14 @@
 ![Idealist Hacker Mono font sample](idealist-hacker-mono-sample.png)
 ![Idealist Hacker Mono font sample2](idealist-hacker-mono-sample2.png)
 
-### [**Try it out!**](https://teadrinker.github.io/idealist-hacker-mono-font/) 
+### [**Try it out!**](https://teadrinker.github.io/idealist-hacker-mono-font/test.html) 
 
 ## About
 * This repo contains ready-to-use, TTF, OTF and WOFF font files. ([SIL Open Font License](https://scripts.sil.org/OFL))
 * This typeface was inspired by pixel-fonts and 70s hacker culture
 * Also contains hacky code to generate font from a custom svg glyph sheet
 * Code requires Deno, and uses opentype.js and [svg flattener from Timo](https://gist.github.com/timo22345/9413158/)
-* Each glyph is designed to fit snuggly into a box:
+* Each glyph is designed to fit snuggly into a box. I tried to align to a 6x10 grid with 1 unit spacing both horizontally and vertically (half a unit on all 4 sides). Most glyphs align to a 3x5 grid as well:
 
 ![Idealist Hacker Mono font box](idealist-hacker-mono-box.png)
 
