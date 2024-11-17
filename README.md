@@ -7,7 +7,7 @@
 * This repo contains ready-to-use, TTF, OTF and WOFF font files. ([SIL Open Font License](https://scripts.sil.org/OFL))
 * This typeface was inspired by pixel-fonts and 70s hacker culture
 * Also contains hacky code to generate font from a custom svg glyph sheet
-* Code requires Deno, and uses opentype.js and [svg flattener from Timo](https://gist.githubusercontent.com/timo22345/9413158/raw/2205896461da9cf7ad1700b0db8257ff9a52d7fa/flatten.js)
+* Code requires Deno, and uses opentype.js and [svg flattener from Timo](https://gist.github.com/timo22345/9413158/)
 * Each glyph is designed to fit snuggly into a box:
 
 ![Idealist Hacker Mono font box](idealist-hacker-mono-box.png)
