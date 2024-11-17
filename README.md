@@ -1,13 +1,13 @@
 ![Idealist Hacker Mono font sample](idealist-hacker-mono-sample.png)
+![Idealist Hacker Mono font sample2](idealist-hacker-mono-sample2.png)
 
 [**Try it out here!**](https://teadrinker.github.io/idealist-hacker-mono-font/) 
 
-* This repo contains ready-to-use TTF, OTF and WOFF font files.
-* Also contains hacky code to generate font from custom svg glyph sheet (Requires Deno, uses opentype.js and [svg flattener from Timo](https://gist.githubusercontent.com/timo22345/9413158/raw/2205896461da9cf7ad1700b0db8257ff9a52d7fa/flatten.js)) 
+* This repo contains ready-to-use, TTF, OTF and WOFF font files. ([SIL Open Font License](https://scripts.sil.org/OFL))
+* Also contains hacky code to generate font from a custom svg glyph sheet
+* Code requires Deno, and uses opentype.js and [svg flattener from Timo](https://gist.githubusercontent.com/timo22345/9413158/raw/2205896461da9cf7ad1700b0db8257ff9a52d7fa/flatten.js)) 
+* Each glyph is designed to fit snuggly into a box:
 
-License: [SIL Open Font License, Version 1.1](https://scripts.sil.org/OFL) 
-
-![Idealist Hacker Mono font sample2](idealist-hacker-mono-sample2.png)
 ![Idealist Hacker Mono font box](idealist-hacker-mono-box.png)
 
 Issues
