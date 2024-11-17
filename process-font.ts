@@ -398,17 +398,12 @@ try {
         }
     }   
 
-    //console.log("maxY: "+ maxY);
-    //console.log("minY: "+ minY);
-    setUnitsPerEm(font, (glyphGridHeight - glyphDestCropH) * glyphScale); // "max size", controls view size in font forge, and line height in the browser
 
-    //setCapitalHeight(font, 1300); 
-    //setAscender(font, 1300); // actually ascenders in font files are more about layouting than actual ascenders
-
+    setUnitsPerEm   (font, (glyphGridHeight - glyphDestCropH) * glyphScale); // controls view size in font forge, and line height in the browser
     setCapitalHeight(font, (inCapitalHeight - inBaseline) * glyphScale); 
-    setXHeight(font, (inXHeight - inBaseline) * glyphScale); 
-    setAscender(font, (inCapitalHeight - inBaseline) * glyphScale); // actually ascenders in font files are more about layouting than actual ascenders
-    setDescender(font, (inDescender - inBaseline) * glyphScale); 
+    setAscender     (font, (inCapitalHeight - inBaseline) * glyphScale); // actually ascenders in font files are more about layouting than actual ascenders
+    setXHeight      (font, (inXHeight - inBaseline) * glyphScale); 
+    setDescender    (font, (inDescender - inBaseline) * glyphScale); 
 
     // JetBrains Mono ExtraBold v2.304 Metrics
     // setAscender(font, 1044)
@@ -418,7 +413,7 @@ try {
 
     // Update font metadata
     font.names = {
-        copyright: { en: "Copyright © 2024 teadrinker /Martin Eklund (fallback font: JetBrains Mono ExtraBold v2.304, https://github.com/JetBrains/JetBrainsMono)" },
+        copyright: { en: "Copyright © 2024 teadrinker / Martin Eklund (fallback font: JetBrains Mono ExtraBold v2.304, https://github.com/JetBrains/JetBrainsMono)" },
         fontFamily: { en: "Idealist Hacker Mono" },
         fontSubfamily: { en: "ExtraBold" },
         uniqueID: { en: "1.0;teadrinker;idealist-hacker-mono-font" },
@@ -426,9 +421,9 @@ try {
         version: { en: "Version 0.9" },
         postScriptName: { en: "IdealistHackerMono-ExtraBold" },
         trademark: { en: "JetBrains Mono is a trademark of JetBrains s.r.o." },
-        manufacturer: { en: "Font Generator" },
+        manufacturer: { en: "teadrinker / Martin Eklund" },
         designer: { en: "teadrinker / Martin Eklund" },
-        description: { en: "Procedurally generated font" },
+        description: { en: "Inpired by pixel-fonts and 70s hacker culture" },
         manufacturerURL: { en: "https://github.com/teadrinker/idealist-hacker-mono-font" },
         designerURL: { en: "https://github.com/teadrinker/idealist-hacker-mono-font" },
         license: { en: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" },
