@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idealist Hacker Mono</title>
+    <style>
+        @font-face {
+            font-family: 'Idealist Hacker Mono';
+            src: url('Idealist Hacker Mono.woff') format('woff');
+        }
+
+        :root {
+            --bg-color: #f4f4f9;
+            --text-color: #333;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --text-color: #f4f4f9;
+        }
+
+        body {
+            font-family: 'Idealist Hacker Mono', monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        pre {
+            font-family: 'Idealist Hacker Mono', monospace;
+            white-space: pre-wrap;
+            font-size: 48px;
+            line-height: 1.4;
+            max-width: 90vw;
+            overflow-x: auto;
+        }
+
+        .text-input {
+            font-family: 'Idealist Hacker Mono', monospace;
+            width: 80%;
+            max-width: 90vw;
+            height: 150px;
+            margin: 20px;
+            padding: 10px;
+            font-size: 48px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            border: 1px solid var(--text-color);
+            border-radius: 4px;
+            resize: vertical;
+            line-height: 1.0;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+            color: var(--text-color);
+        }
+
+        .theme-toggle:hover {
+            opacity: 1;
+        }
+
+        h1 { font-size: 70px; }
+        pre { font-size: 48px; }
+        .text-input { 
+            font-size: 48px;
+            height: 150px;
+        }
+
+        @media screen and (max-width: 1124px) {
+            h1 { font-size: 55px !important; }
+            pre { font-size: 38px !important; }
+            .text-input {
+                font-size: 38px !important;
+                height: 120px;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            h1 { font-size: 46px !important; }
+            pre { font-size: 32px !important; }
+            .text-input {
+                font-size: 32px !important;
+                height: 100px;
+            }
+        }
+        
+        @media screen and (max-width: 700px) {
+            h1 { font-size: 29px !important; }
+            pre { font-size: 20px !important; }
+            .text-input {
+                font-size: 20px !important;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" aria-label="Toggle theme">☼</button>
+    <h1>IDEALIST HACKER MONO</h1>
+    <pre>
+ 0 1 2 3 4 5 6 7 8 9 ^ " ' , . 
+ A B C D E F G H I J K L M ; : 
+ N O P Q R S T U V W X Y Z ( ) 
+ a b c d e f g h i j k l m [ ] 
+ n o p q r s t u v w x y z { } 
+ @ # $ % & * + - = ! ? / \ < ></pre>
+    <textarea class="text-input">
+HOW VEXINGLY QUICK
+DAFT ZEBRAS JUMP!
+    </textarea>
+
+    <div style="position: fixed; top: 20px; left: 20px; opacity: 0.7;">
+        <a href="https://github.com/teadrinker/idealist-hacker-mono-font" style="color: inherit; text-decoration: none; letter-spacing: 0.05em; padding: 10px; display: inline-block;">
+            GitHub
+        </a>
+    </div>
+
+    <script>/*
+-----------------------
+Inspired by pixel-fonts
+-----------------------
+Glyphs fits a tight box
+-----------------------  
+
+ 0 1 2 3 4 5 6 7 8 9 / \ | : . 
+ A B C D E F G H I J K L M ; , 
+ N O P Q R S T U V W X Y Z ( ) 
+ a b c d e f g h i j k l m [ ] 
+ n o p q r s t u v w x y z { } 
+ ~ ! @ # $ % ^ & * + - _ ? " ' 
+
+0 1 2 3 4 5 6 7 8 9 ! ? @ ( )
+A B C D E F G H I J K L M [ ]
+N O P Q R S T U V W X Y Z { }
+a b c d e f g h i j k l m . :
+n o p q r s t u v w x y z , ;
+# $ % ^ & _ ` ' " * + - / | \
+
+! " # $ % & ' ( ) * + , - . / 
+0 1 2 3 4 5 6 7 8 9 : ; < = > ? 
+@ A B C D E F G H I J K L M N O 
+P Q R S T U V W X Y Z [ \ ] ^ _ 
+` a b c d e f g h i j k l m n o 
+p q r s t u v w x y z { | } ~
+
+        const asciiContainer = document.querySelector('pre');
+        let asciiContent = '';
+        for (let i = 32; i <= 126; i++) { // Printable ASCII range
+            asciiContent += `${String.fromCharCode(i)} `;
+            if ((i - 31) % 16 === 0) asciiContent += '\n'; // Wrap every 16 chars
+        }
+        asciiContainer.textContent = asciiContent.trim();
+*/
+        // Add theme toggle functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        // Set initial theme based on system preference
+        if (prefersDarkScheme.matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            themeToggle.textContent = '◐';
+        } else {
+            themeToggle.textContent = '◑';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                document.documentElement.removeAttribute('data-theme');
+                themeToggle.textContent = '◑';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                themeToggle.textContent = '◐';
+            }
+        });
+    </script>
+</body>
+</html>
