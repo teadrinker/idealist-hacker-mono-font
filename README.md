@@ -20,3 +20,6 @@
 ## Future
  * At some point I hope to make a proper variable-width version of this font
  * Also a monospaced variant that has more normal descenders would be nice...
+
+## Fun links...
+ * [Jgs Font](https://adelfaure.net/tools/jgs/) nice pixel fonts for ASCII art by [Adel Faure](https://adelfaure.net/)
