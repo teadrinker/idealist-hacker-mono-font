@@ -6,6 +6,10 @@
 ## About
 * Typeface was inspired by pixel-fonts and 70s hacker culture
 * First apperead my demo [PRINT](https://demozoo.org/productions/362590/)
+
+  ![GIF of snippet from PRINT](print.gif)
+
+
 * Each glyph is designed to fit snuggly into a box. I tried to align to a 6x10 grid with 1 unit spacing both horizontally and vertically (half a unit on all 4 sides). Most glyphs align to a 3x5 grid as well:
 
   ![Idealist Hacker Mono font box](idealist-hacker-mono-box.png)
