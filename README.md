@@ -5,7 +5,7 @@
 
 ## About
 * Typeface was inspired by pixel-fonts and 70s hacker culture
-* First apperead my demo [PRINT](https://www.youtube.com/watch?v=_ggIXZhOPfs)
+* First apperead in my demo [PRINT](https://www.youtube.com/watch?v=_ggIXZhOPfs)
 
   ![GIF of snippet from PRINT](print.gif)
 
